@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head> <!--INSTRUMENTOS DO PROGRAMADOR-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>®ψΣ - IFA CCMSCTM</title>
+    <link rel="icon" type="image/svg" href="img/Logo.svg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mu.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     
+</head>
+
+<body> <!--CORPO DA PÁGINA INICIAL-->
+    <header class="cabeçalho"> <!--CABEÇALHO E CLASSE PARA O CSS STYLE-->
+        <div class="container"> <!--UMA DIVISÃO PARA COMPORTAR OS ELEMENTOS DO CABEÇALHO E AS CLASSES DE CSS-->
+            <input type="checkbox" id="menu" class="container__botao"> <!--Cria caixa de seleção (checkbox) interativa, usada para controlar elementos de interface (AQUI: menus "hambúrguer" responsivos).--> 
+            <label for="menu" class="container__rotulo"> <!--A área clicável que interage com o botão do menu-->
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span> <!--Estiliza o menu hamburger-->
+            
+    </label>
+        <ul class="lista-menu"> <!-- Lista Oculta de links de Navegação do site no HAMBURGER PARA O CELULAR ou MOBILE-->
+            <li class="lista-menu__titulo">TEMÁTICAS</li>
+                     <li class="lista-menu__item">
+                        <a href="mobilidade.html" class="lista-menu__link">mobilidade</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="mu.html" class="lista-menu__link">Movimento Uniforme</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="muv.html" class="lista-menu__link">Movimento Variado</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="din.html" class="lista-menu__link">Dinâmica</a>
+                    </li>
+            </ul> <!--Fim da Lista de Navegação de celular/mobile-->
+    
+          <div>  
+            <a href="index.html"><!--IMAGEM DA LOGO COM LINK PARA A HOME PAGE-->
+               <img src="img/Logo.svg" alt="Logo da home" class="container__imagem">
+            </a><!-- LOGO DO SITE NO CABEÇALHO E CLASSE DO CSS-->
+          </div>
+           <div>        
+             <h4 class="gradient-text"> IFA CCMSCTM  </h4>
+          </div>
+
+        </div> <!-- TÍTULO DO SITE NO CABEÇALHO E CLASSE DO CSS-->
+
+        
+          
+
+ <ul class="opções"> <!-- LISTA VISÍVEL DE LINKS DE NAVEGAÇAO do site no HAMBURGER DO CBEÇALHO PARA O DESKTOP-->
+            <input type="checkbox" id="opções-menu" class="opções__botão"> <!--input cria um marcador clicável, id identifica para label usar o for e endereçar a ação, o class leva ao CSS-->
+            <label for="opções-menu" class="opções__rotulo"> <!--ENDEREÇADOR DO S LINKS DO MENU HAMBURBER-->
+                <li class="opções__item">CONSTRUÇÕES</li> <!--TÍTULO DO MENU HAMBRGER -->
+            </label>
+                    <ul class="lista-menu"> 
+                        <li class="lista-menu__titulo">TEMÁTICAS</li> 
+                        <li class="lista-menu__item"> 
+                            <li class="lista-menu__item dropdown">   
+                             <a href="mobilidade.html" class="lista-menu__link">mobilidade</a> 
+                               <ul class="submenu">
+                                  <li><a href="mu.html" class="submenu__link">Movimento Uniforme</a></li>
+                                  <li><a href="muv.html" class="submenu__link">Movimento Variado</a></li>
+                                  <li><a href="genetica.html" class="submenu__link">Dinâmiica</a></li>
+                                </ul>
+                              </li> 
+                        <!-- Item com Submenu -->
+                          <li class="lista-menu__item dropdown"> 
+                            <a href="#" class="lista-menu__link">Visão</a> 
+                            <ul class="submenu">
+                              <li><a href="luz.html" class="submenu__link">Ondulatória</a></li>
+                              <li><a href="anomalias.html" class="submenu__link">Anomalias de visão</a></li>
+                              <li><a href="lentes.html" class="submenu__link">Óptica</a></li>
+                            </ul>
+                          </li>
+                    </ul> <!--FIM DA LISTA DE NAVEGAÇAO DO DESKTOP-->
+
+        </div>
+    
+    </header>  <!--FIM DO CABEÇALHO-->
+
+    
+    <section class="banner"> <!--Primeiro Espaço editável da página inicial- UMA SECTION, UMA REGIÃO VISUAL NA HOME PAGE-->
+        <div class="banner-container">
+             <h1 class="titulo-digitando"> M O V I M E N T O - U N I F O R M E</h1>
+        </div>
+    </section>
+
+
+                <!--INÍCIO DO CARROSSEL DE IMAGENS E CLASS DO CSS--><!--FIM DO CARROSSEL-->
+
+     
+
+<div class="calc">
+   <h1 class="titulo-digitando"> C A L C U L E: </h1>
+    <div class="containereq">
+
+    <div class="input-group">
+        <label>Nome da Equação:</label>
+        <input type="text" id="nome-equacao" placeholder="Ex: Velocidade Média">
+    </div>
+
+    <div class="input-group">
+        <label>Símb.:</label>
+        <input type="text" id="simbolo-equacao" placeholder="Ex: v">
+    </div>
+        
+        <div class="input-group">
+        <label>Eq:</label>
+        <input type="text" id="equacao" placeholder="Ex: (d / t)" oninput="gerarInputs()">
+    </div>
+
+    <div class="input-group">
+        <label>Unid. Med.:</label>
+        <input type="text" id="unidade-equacao" placeholder="Ex: m/s">
+    </div>
+
+    
+
+    <div id="inputs-container"></div>
+    <button onclick="resolverEquacao()">Calcular</button>        
+    <div class="resultado" id="resultado" style="display:none;"></div>
+</div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+    
+
+<script>
+    let variaveisGlobais = [];
+
+    function gerarInputs() {
+        const equacao = document.getElementById('equacao').value;
+        const container = document.getElementById('inputs-container');
+        container.innerHTML = '';
+        variaveisGlobais = [];
+
+        // Expressão regular para extrair apenas letras
+        const letras = equacao.match(/[a-zA-Z]/g);
+        
+        if (letras) {
+            // Remove duplicatas
+            const variaveisUnicas = [...new Set(letras.map(v => v.toLowerCase()))];
+            
+            variaveisUnicas.forEach(v => {
+                variaveisGlobais.push(v);
+                container.innerHTML += `
+                    <div class="input-group">
+                        <label>Variável <strong>${v.toUpperCase()}</strong>:</label>
+                        <input type="text" id="nome-${v}" placeholder="Nome (ex: Distância)" required>
+                        <input type="text" id="simb-${v}" placeholder="Símbolo (ex: d)" required>
+                        <input type="text" id="unid-${v}" placeholder="Unidade (ex: metros)" required>
+                        <input type="number" id="val-${v}" placeholder="Valor numérico" step="any" required>
+                    </div>
+                `;
+            });
+        }
+    }
+
+    function resolverEquacao() {
+        const nomeEq = document.getElementById('nome-equacao').value || "Equação";
+        const simbEq = document.getElementById('simbolo-equacao').value || "";
+        const unidEq = document.getElementById('unidade-equacao').value || "";
+        let equacaoStr = document.getElementById('equacao').value;
+
+        try {
+            // Substitui as letras na equação pelos valores numéricos
+            variaveisGlobais.forEach(v => {
+                const valor = document.getElementById(`val-${v}`).value;
+                if (!valor) throw new Error("Preencha todos os valores!");
+                
+                // Regex global para substituir todas as ocorrências da variável
+                const regex = new RegExp(v, 'gi');
+                equacaoStr = equacaoStr.replace(regex, valor);
+            });
+
+            // Avalia o resultado matemático com segurança
+            const valorResultado = eval(equacaoStr);
+
+            if (isNaN(valorResultado) || !isFinite(valorResultado)) {
+                alert("Equação inválida. Verifique os valores inseridos.");
+                return;
+            }
+
+            // Exibe o resultado com o Nome da Equação, símbolo e unidade
+            const divResultado = document.getElementById('resultado');
+            divResultado.innerHTML = `
+                <strong>${nomeEq} (${simbEq})</strong>: 
+                ${valorResultado.toFixed(2).replace('.', ',')} ${unidEq}
+            `;
+            divResultado.style.display = 'block';
+
+        } catch (error) {
+            alert("Erro ao calcular. Certifique-se de que a equação foi digitada corretamente.");
+        }
+    }
+</script>
+
+    
+
+    
+    <div class="rodapepadrao"> <!--RODAPÉ-->
+         CRÉDITOS: EquipeAlura/SEED-PR. Autoras e autores de códigos, imagens, sons e demais conhecimentos utilzados e multiplicados neste projeto aberto. Sobretudo, toda gratidão por gentis críticas e generosa motivação creditadas por estimadas e valorosos estudantes.
+          <div class="copyright">© Copyright Física Renato Pereira ®ψΣ.</div>
+          <div class="copyright"> Ed. 00-10/2024. Rev. 01-05/2026.</div>
+          </div>
+
+    
+</body> <!--FIM DO CORPO DA FOE PAGE-->
+
+</html> <!--FIM DO CÓDIGO-->
