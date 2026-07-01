@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceitual Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mapa Conceitual: Tecnologias Web</h1>
+        
+        <div class="map-wrapper">
+            <div class="node central" id="node-central" data-color="#2c3e50" data-desc="A união e harmonia dessas três tecnologias fundamentais dão vida a toda a internet moderna.">
+                <h3>Dev Web</h3>
+                <p>Core Front-End</p>
+            </div>
+
+            <div class="node html-node" data-color="#e34c26" data-desc="HTML (HyperText Markup Language) é a estrutura e o esqueleto da página. Define onde ficam os textos, imagens e links.">
+                <h3>HTML</h3>
+            </div>
+            
+            <div class="node css-node" data-color="#264de4" data-desc="CSS (Cascading Style Sheets) cuida do design e da estética. Define as cores, fontes, espaçamentos e layouts.">
+                <h3>CSS</h3>
+            </div>
+            
+            <div class="node js-node" data-color="#f7df1e" data-desc="JavaScript é o cérebro. Traw a interatividade, lógica, animações complexas e atualizações de dados em tempo real.">
+                <h3>JavaScript</h3>
+            </div>
+        </div>
+
+        <div id="info-panel" class="info-panel">
+            <p>Clique em qualquer conceito acima para ver os detalhes.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
